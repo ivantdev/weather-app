@@ -51,7 +51,6 @@ const ApiContextProvider = ( {children} ) => {
                     if(!city) {
                         setCity(weather.timezone.split('/')[1]);
                     }
-
                 });
         }
 
