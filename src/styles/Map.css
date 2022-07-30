@@ -1,0 +1,18 @@
+.map__title {
+    width: 100%;
+    grid-column: 1/ 3;
+    text-align: center;
+}
+
+.map__title h2{
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.map__container {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    grid-column: 1 / 3;
+    border-radius: 20px;
+}

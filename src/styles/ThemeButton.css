@@ -1,0 +1,30 @@
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.theme-button__container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999999;
+}
+
+.theme-button__container button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    font-size: 4rem;
+    background-color: #9baaa6;
+    color: #000000ad;
+}
+
+.dark .theme-button__container button {
+    color: #e0e0e0;
+    background-color: #1f1d2c;
+    transform: scaleX(-1);
+}

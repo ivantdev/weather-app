@@ -1,0 +1,23 @@
+.daily__list {
+    margin: 30px auto;
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.daily__title {
+    grid-column: 1 / 3;
+}
+
+.daily__title h2 {
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+.daily__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}

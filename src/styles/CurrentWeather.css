@@ -1,0 +1,259 @@
+:root {
+    --color-humidity: #417cd4;
+    --color-wind: #6e88ad;
+    --color-humidity-dark: #b3d1ff;
+    --color-wind-dark: #afbcce;
+
+    --wave-day: #b3e9e94f;
+    --wave-night: #c8c1e70e;
+
+    --icon-sun: #ffae00;
+    --icon-moon-night: #5900ff;
+    --icon-moon-day-light: #003cff77;
+    --icon-moon-night-light: #9dc9ee;
+    --icon-cloud-day: #a0a0a0;
+    --icon-cloud-night: #4e5a9e;
+    --icon-cloud-black: #696969;
+    --icon-droplets-day: #0b54c0;
+    --icon-droplets-night: #00b7ff;
+    --icon-bolt-day: #000;
+    --icon-bolt-night: #ffd900;
+    --icon-snow-day: #60b4ce;
+    --icon-snow-night: #60b4ce;
+    --icon-wind-warning: #fc5f5f;
+}
+
+.dark .current__details {
+    background-color: #ffffff2a;
+}
+
+.details__image {
+    font-size: 10rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+    .details__image {
+        font-size: 15rem;
+    }
+}
+
+/* 
+
+START Customization icons! -------------------------------------------------------
+
+*/
+
+.fa-sun {
+    color: var(--icon-sun);
+}
+
+.fa-cloud-sun::before {
+    color: var(--icon-cloud-day);
+}
+.fa-cloud-sun::after {
+    color: var(--icon-sun);
+}
+
+.fa-cloud {
+    color: var(--icon-cloud-day);
+}
+
+.details__image .fa-moon, .next__time .fa-moon {
+    color: var(--icon-moon-day-light);
+}
+.dark .details__image .fa-moon, .dark .next__time .fa-moon {
+    color: var(--icon-moon-night-light);
+}
+
+.fa-clouds::after {
+    color: var(--icon-cloud-day);
+}
+.fa-clouds::before {
+    color: var(--icon-cloud-black);
+}
+
+.fa-cloud-moon::after {
+    color: var(--icon-moon-day-light);
+}
+.fa-cloud-moon::before {
+    color: var(--icon-cloud-day);
+}
+.dark .fa-cloud-moon::after {
+    color: var(--icon-moon-night-light);
+}
+.dark .fa-cloud-moon::before {
+    color: var(--icon-cloud-night);
+}
+
+.fa-cloud-rain::after {
+    color: var(--icon-droplets-day);
+}
+
+.fa-cloud-rain::before {
+    color: var(--icon-cloud-black);
+}
+
+.dark .fa-cloud-rain::after {
+    color: var(--icon-droplets-night);
+}
+
+.dark .fa-cloud-rain::before {
+    color: var(--icon-cloud-day);
+}
+
+.merge-container {
+    width: 1em;
+    height: 1em;
+    margin: 0 auto;
+    position: relative;
+}
+.cloud-rain-sun__rain {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+.cloud-rain-sun__sun {
+    position: absolute;
+    font-size: 7rem;
+    left: -3.5em;
+    top: -2.5em;
+}
+
+.cloud-rain-moon__rain {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+.cloud-rain-moon__moon {
+    position: absolute;
+    font-size: 7rem;
+    left: -3.5em;
+    top: -2.5em;
+}
+
+.dark .fa-cloud-bolt::before {
+    color: var(--icon-cloud-night);
+}
+.dark .fa-cloud-bolt::after {
+    color: var(--icon-bolt-night);
+}
+
+.merge-container .cloud-bolt__cloud {
+    position: absolute;
+    font-size: 1em;
+    top: -0.1em;
+    left: 0;
+    right: 0;
+}
+
+.dark .cloud-bolt__cloud {
+    color: var(--icon-cloud-day);
+}
+
+.cloud-bolt__cloud {
+    color: var(--icon-cloud-black);
+}
+
+.merge-container .cloud-bolt__bolt {
+    position: absolute;
+    font-size: 0.8em;
+    left: 0.4em;
+    top: 0.4em;
+    z-index: 1;
+}
+
+.cloud-bolt__bolt {
+    color: var(--icon-bolt-night);
+}
+
+.fa-snowflakes {
+    color: var(--icon-snow-day);
+}
+
+.fa-wind-warning {
+    color: var(--icon-wind-warning)
+}
+
+.fa-solid, .fa-regular, .fa-duotone {
+    font-size: 1em;
+    transition: all ease-in 300ms;
+}
+
+
+/* 
+
+END Customization icons! -------------------------------------------------------
+
+*/
+
+.details__description {
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+.details__right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
+
+.details__right div{
+    margin: 5px;
+    max-width: 120px;
+}
+
+.details__temp {
+    display: flex;
+    flex-direction: column;
+}
+
+.temp__big-temp {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.temp__feels {
+    margin-left: 2px;
+    font-size: 1.5rem;
+}
+
+.details__humidity, .details__wind-speed {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-items: left;
+    align-items: center;
+    gap: 5px;
+}
+
+.other__text {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.humidity__icon, .wind__icon {
+    justify-self: center;
+}
+
+.humidity__icon {
+    font-size: 3rem;
+    color: var(--color-humidity);
+}
+
+.dark .humidity__icon {
+    color: var(--color-humidity-dark);
+}
+
+.wind__icon {
+    color: var(--color-wind);
+    font-size: 2.5rem;
+}
+
+.dark .wind__icon {
+    color: var(--color-wind-dark);
+}

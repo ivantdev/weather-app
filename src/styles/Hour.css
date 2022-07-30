@@ -1,0 +1,33 @@
+.hourly__item {
+    display: grid;
+    grid-template-columns: 60px;
+    grid-template-rows: 20px 40px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.hourly__icon, .daily__icon {
+    font-size: 1.8rem;
+}
+
+.hourly__icon i {
+    font-size: 1.8rem;
+}
+
+.hourly__icon .cloud-rain-sun__sun {
+    left: -0.4em;
+    top: -0.4em;
+}
+.cloud-rain-moon__moon {
+    left: -0.4em;
+    top: -0.4em;
+}
+
+.hourly__item .merge-container {
+    width: 10px;
+    height: 10px;
+}
+
+.hourly__temp {
+    margin-left: 5px;
+}
