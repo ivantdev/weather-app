@@ -56,18 +56,18 @@ const ApiContextProvider = ( {children} ) => {
         }
 
         const fetchLocationByIp = () => {
-            const response = fetch("http://ip-api.com/json/")
+            const response = fetch("https://ipapi.co//json")
                 .then(response => response.json())
                 .then(response => {
                     setCity(response.city);
                     setCoords({
-                        lat: response.lat,
-                        lon: response.lon
+                        lat: response.latitude,
+                        lon: response.longitude
                     });
                     return ({response: true,
                         localCoords: {
-                            lat: response.lat,
-                            lon: response.lon
+                            lat: response.latitude,
+                            lon: response.longitude
                         }
                     });
                 });
