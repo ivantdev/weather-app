@@ -82,9 +82,6 @@ const ApiContextProvider = ( {children} ) => {
 
         const getGeoByUser = async () => {
             const { response, data: localCoords } = await getGeoLocation();
-            const success = await new Promise((resolve, reject) => {
-                resolve(true);
-            });
             if(response) {
                 setCoords(localCoords);
                 fetchWeather(localCoords);
