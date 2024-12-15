@@ -43,7 +43,7 @@ const ApiContextProvider = ( {children} ) => {
 
     useEffect(() => {
         const fetchWeather = async ({lat, lon}, city=false) => {
-            fetch(`${ENDPOINT}/onecall?lat=${lat}&lon=${lon}&lang=en&units=metric&appid=${API_KEY}`)
+            fetch(`${ENDPOINT}?lat=${lat}&lon=${lon}&lang=en&units=metric&appid=${API_KEY}`)
                 .then((response) => response.json())
                 .then((weather) => {
                     setData(weather);
