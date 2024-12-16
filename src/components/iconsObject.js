@@ -1,3 +1,5 @@
+import React from "react";
+
 const iconSourceByCode = {
     "01d": <i className="fa-duotone fa-sun"></i>,
     "02d": <i className="fa-duotone fa-cloud-sun"></i>,

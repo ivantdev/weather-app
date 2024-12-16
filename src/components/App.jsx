@@ -1,3 +1,4 @@
+import React from 'react';
 import { ApiContext, ApiContextProvider } from '../context/ApiContext';
 import { Location } from './Location';
 import { CurrentWeather } from './CurrentWeather';

@@ -17,7 +17,7 @@ const Location = () => {
             <span className="location__location">{city}</span>
         </div>
         <div className="current__date">
-            <span className="date">{ getTodayString(data.current.dt) }</span>
+            <span className="date">{ getTodayString(data.current?.dt || 1633669200) }</span>
         </div>
     </>
     );

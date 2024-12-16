@@ -4,11 +4,83 @@ import { Hour } from "./Hour";
 import "../styles/Hourly.css";
 
 const Hourly = () => {
-    const data = useApi();
+    // const data = useApi();
 
-    if (!data) {
-        return
-    }
+    let data = {};
+    data.hourly = [
+        {
+            dt: 1633669100,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669101,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669102,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669103,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669204,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669205,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669206,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+        {
+            dt: 1633669207,
+            temp: 23.4,
+            weather: [
+                {
+                    icon: "01d"
+                }
+            ]
+        },
+    ];
     const { hourly } = data;
     hourly.length = 12;
     return (

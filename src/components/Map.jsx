@@ -18,7 +18,7 @@ const Map = () => {
         </div>
         <MapContainer
             center={[coords.lat, coords.lon]}
-            zoom={20}
+            zoom={15}
             className="map__container"
         >
             <TileLayer
